@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/-m0g1A8z)
 # Pancake Sort
 
 There is an abstract data type (ADT) called a *pancake array*, which provides
@@ -28,4 +29,20 @@ element into its correct position.
 What is the asymptotic runtime ($\Theta$) of your algorithm in terms of the
 number of comparisons? What is it in terms of the number of flips? Add your
 answer to this markdown file.
+
+Comparisons:
+
+The pancake sort function will run n amount of comparisons (n = length of the array), each time it will call maxNum 1 time and flip twice.
+
+The number of comparisons in maxNum decrement by 1 each time it is called, this is the same as the sum of 1 to n, which is simplified into $n^2$
+
+While the flip function (in terms of comparisons) is the same 
+
+We end up with a the number of comparisons equalling n(maxNum) + 2n(flip) =  $n^2$ + $2n^2$ => ($\Theta$)$(n^2)$
+
+
+Flips:
+
+pancakeSort will run trough n (n = length of array) times and will call the flip function twice each time. So the flip function will be called 2n times.
+Asymptotically this is equal to the number of flips being ($\Theta$)(n)
 
